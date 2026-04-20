@@ -1090,16 +1090,14 @@ function escapeScriptJson(jsonText){
 
 function buildPersistentHtml(){
   const state = collectCalendarState();
-  let src = '<!DOCTYPE html>
-' + document.documentElement.outerHTML;
+  let src = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
   const stateJson = escapeScriptJson(JSON.stringify(state));
   const stateScript = `<script id="persistedCalendarState">window.__PERSISTED_CALENDAR_STATE__ = ${stateJson};</script>`;
 
   if(/<script id="persistedCalendarState">[\s\S]*?<\/script>/.test(src)){
     src = src.replace(/<script id="persistedCalendarState">[\s\S]*?<\/script>/, stateScript);
   } else {
-    src = src.replace('<script>', stateScript + '
-<script>');
+    src = src.replace('<script>', stateScript + '\n<script>');
   }
 
   return src;
@@ -1642,7 +1640,7 @@ const observer = new IntersectionObserver((entries)=>{
   });
 },{threshold:0.15});
 document.querySelectorAll('.month-block').forEach(el=>observer.observe(el));
-</script><input type="file" accept="image/*" multiple="" style="display: none;">
+</script>
 
 
 </body></html>
