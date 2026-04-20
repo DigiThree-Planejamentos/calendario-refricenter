@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -243,12 +244,12 @@
   <button class="btn btn-ghost" onclick="exportHTML()">📥 Salvar HTML</button>
   <button class="btn btn-ghost" id="editModeBtn" onclick="toggleEditMode()">✏️ Modo Edição</button>
   <button class="btn btn-ghost" onclick="openDatasModal()">🗓 Datas Comemorativas</button>
-  <div class="month-nav" id="monthNav"><button class="month-btn" id="mnav0">Jan</button><button class="month-btn" id="mnav1">Fev</button><button class="month-btn" id="mnav2">Mar</button><button class="month-btn active" id="mnav3">Abr</button><button class="month-btn" id="mnav4">Mai</button><button class="month-btn" id="mnav5">Jun</button><button class="month-btn" id="mnav6">Jul</button><button class="month-btn" id="mnav7">Ago</button><button class="month-btn" id="mnav8">Set</button><button class="month-btn" id="mnav9">Out</button><button class="month-btn" id="mnav10">Nov</button><button class="month-btn" id="mnav11">Dez</button></div>
+  <div class="month-nav" id="monthNav"><button class="month-btn active" id="mnav0">Jan</button><button class="month-btn" id="mnav1">Fev</button><button class="month-btn" id="mnav2">Mar</button><button class="month-btn" id="mnav3">Abr</button><button class="month-btn" id="mnav4">Mai</button><button class="month-btn" id="mnav5">Jun</button><button class="month-btn" id="mnav6">Jul</button><button class="month-btn" id="mnav7">Ago</button><button class="month-btn" id="mnav8">Set</button><button class="month-btn" id="mnav9">Out</button><button class="month-btn" id="mnav10">Nov</button><button class="month-btn" id="mnav11">Dez</button><button class="month-btn" id="mnav0">Jan</button><button class="month-btn" id="mnav1">Fev</button><button class="month-btn" id="mnav2">Mar</button><button class="month-btn" id="mnav3">Abr</button><button class="month-btn" id="mnav4">Mai</button><button class="month-btn" id="mnav5">Jun</button><button class="month-btn" id="mnav6">Jul</button><button class="month-btn" id="mnav7">Ago</button><button class="month-btn" id="mnav8">Set</button><button class="month-btn" id="mnav9">Out</button><button class="month-btn" id="mnav10">Nov</button><button class="month-btn" id="mnav11">Dez</button></div>
 </div>
 
 <div class="stats-bar">
-  <div class="stat-pill"><div class="num" style="color:var(--navy)" id="statTotal">13</div><div class="lbl">Total Posts</div></div>
-  <div class="stat-pill"><div class="num" style="color:var(--arte)" id="statArte">5</div><div class="lbl">Artes</div></div>
+  <div class="stat-pill"><div class="num" style="color:var(--navy)" id="statTotal">14</div><div class="lbl">Total Posts</div></div>
+  <div class="stat-pill"><div class="num" style="color:var(--arte)" id="statArte">6</div><div class="lbl">Artes</div></div>
   <div class="stat-pill"><div class="num" style="color:var(--foto)" id="statFoto">0</div><div class="lbl">Fotos</div></div>
   <div class="stat-pill"><div class="num" style="color:var(--story)" id="statStory">2</div><div class="lbl">Stories</div></div>
   <div class="stat-pill"><div class="num" style="color:var(--reels)" id="statReels">4</div><div class="lbl">Reels</div></div>
@@ -290,7 +291,19 @@
         <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(1,'observacoes',this.value)"></textarea>
       </div>
     </div>
-  </div><div class="cal-grid-outer"><div class="cal-dow"><div class="cal-dow-cell wknd">Dom</div><div class="cal-dow-cell">Seg</div><div class="cal-dow-cell">Ter</div><div class="cal-dow-cell">Qua</div><div class="cal-dow-cell">Qui</div><div class="cal-dow-cell">Sex</div><div class="cal-dow-cell wknd">Sáb</div></div><div class="cal-weeks"><div class="cal-week"><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day" data-day="1"><div class="day-num">1</div><div class="special-label">🎆 Ano Novo</div><button class="add-post-btn" onclick="openModal(0,1,true)">＋ post</button></div><div class="cal-day" data-day="2"><div class="day-num">2</div><button class="add-post-btn" onclick="openModal(0,2,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="3"><div class="day-num">3</div><button class="add-post-btn" onclick="openModal(0,3,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="4"><div class="day-num">4</div><button class="add-post-btn" onclick="openModal(0,4,true)">＋ post</button></div><div class="cal-day" data-day="5"><div class="day-num">5</div><button class="add-post-btn" onclick="openModal(0,5,true)">＋ post</button></div><div class="cal-day" data-day="6"><div class="day-num">6</div><div class="special-label">🏖️ Feriado RJ</div><button class="add-post-btn" onclick="openModal(0,6,true)">＋ post</button></div><div class="cal-day" data-day="7"><div class="day-num">7</div><button class="add-post-btn" onclick="openModal(0,7,true)">＋ post</button></div><div class="cal-day" data-day="8"><div class="day-num">8</div><button class="add-post-btn" onclick="openModal(0,8,true)">＋ post</button></div><div class="cal-day" data-day="9"><div class="day-num">9</div><button class="add-post-btn" onclick="openModal(0,9,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="10"><div class="day-num">10</div><button class="add-post-btn" onclick="openModal(0,10,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="11"><div class="day-num">11</div><button class="add-post-btn" onclick="openModal(0,11,true)">＋ post</button></div><div class="cal-day" data-day="12"><div class="day-num">12</div><button class="add-post-btn" onclick="openModal(0,12,true)">＋ post</button></div><div class="cal-day" data-day="13"><div class="day-num">13</div><button class="add-post-btn" onclick="openModal(0,13,true)">＋ post</button></div><div class="cal-day" data-day="14"><div class="day-num">14</div><button class="add-post-btn" onclick="openModal(0,14,true)">＋ post</button></div><div class="cal-day" data-day="15"><div class="day-num">15</div><button class="add-post-btn" onclick="openModal(0,15,true)">＋ post</button></div><div class="cal-day" data-day="16"><div class="day-num">16</div><button class="add-post-btn" onclick="openModal(0,16,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="17"><div class="day-num">17</div><button class="add-post-btn" onclick="openModal(0,17,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="18"><div class="day-num">18</div><button class="add-post-btn" onclick="openModal(0,18,true)">＋ post</button></div><div class="cal-day" data-day="19"><div class="day-num">19</div><button class="add-post-btn" onclick="openModal(0,19,true)">＋ post</button></div><div class="cal-day" data-day="20"><div class="day-num">20</div><button class="add-post-btn" onclick="openModal(0,20,true)">＋ post</button></div><div class="cal-day" data-day="21"><div class="day-num">21</div><button class="add-post-btn" onclick="openModal(0,21,true)">＋ post</button></div><div class="cal-day" data-day="22"><div class="day-num">22</div><button class="add-post-btn" onclick="openModal(0,22,true)">＋ post</button></div><div class="cal-day" data-day="23"><div class="day-num">23</div><button class="add-post-btn" onclick="openModal(0,23,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="24"><div class="day-num">24</div><button class="add-post-btn" onclick="openModal(0,24,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="25"><div class="day-num">25</div><button class="add-post-btn" onclick="openModal(0,25,true)">＋ post</button></div><div class="cal-day" data-day="26"><div class="day-num">26</div><button class="add-post-btn" onclick="openModal(0,26,true)">＋ post</button></div><div class="cal-day" data-day="27"><div class="day-num">27</div><button class="add-post-btn" onclick="openModal(0,27,true)">＋ post</button></div><div class="cal-day" data-day="28"><div class="day-num">28</div><button class="add-post-btn" onclick="openModal(0,28,true)">＋ post</button></div><div class="cal-day" data-day="29"><div class="day-num">29</div><button class="add-post-btn" onclick="openModal(0,29,true)">＋ post</button></div><div class="cal-day" data-day="30"><div class="day-num">30</div><button class="add-post-btn" onclick="openModal(0,30,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="31"><div class="day-num">31</div><button class="add-post-btn" onclick="openModal(0,31,true)">＋ post</button></div></div></div></div></div><div class="month-block" id="month-1"><div class="month-header"><div class="month-title">Fevereiro <em>2026</em></div><div class="month-badge">Mês 2</div></div><div class="month-notes" contenteditable="true" data-month="2" placeholder="Descreva a campanha do mês, promoções, objetivos, datas importantes…"></div><div class="plan-panel">
+  </div><div class="cal-grid-outer"><div class="cal-dow"><div class="cal-dow-cell wknd">Dom</div><div class="cal-dow-cell">Seg</div><div class="cal-dow-cell">Ter</div><div class="cal-dow-cell">Qua</div><div class="cal-dow-cell">Qui</div><div class="cal-dow-cell">Sex</div><div class="cal-dow-cell wknd">Sáb</div></div><div class="cal-weeks"><div class="cal-week"><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day" data-day="1"><div class="day-num">1</div><div class="special-label">🎆 Ano Novo</div><button class="add-post-btn" onclick="openModal(0,1,true)">＋ post</button></div><div class="cal-day" data-day="2"><div class="day-num">2</div><button class="add-post-btn" onclick="openModal(0,2,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="3"><div class="day-num">3</div><button class="add-post-btn" onclick="openModal(0,3,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="4"><div class="day-num">4</div>
+            <div class="post-card arte" onclick="openModal(0,4)">
+              <div class="card-actions">
+                <button class="card-btn" onclick="event.stopPropagation();togglePostado(0,4)" title="Toggle postado">✅</button>
+                <button class="card-btn" onclick="event.stopPropagation();openModal(0,4)">✏️</button>
+                <button class="card-btn" onclick="event.stopPropagation();deletePostByKey(0,4)">🗑</button>
+              </div>
+              <div class="post-type-tag">🎨 Arte</div>
+              
+              <div class="post-title" contenteditable="true" spellcheck="false" onclick="event.stopPropagation()" onblur="updateTitle(0,4,this.innerText)">teste</div>
+              
+              <div class="card-gallery"><button class="add-thumb-btn" onclick="event.stopPropagation();triggerCardImg(0,4)" title="Adicionar foto">＋</button></div>
+            </div></div><div class="cal-day" data-day="5"><div class="day-num">5</div><button class="add-post-btn" onclick="openModal(0,5,true)">＋ post</button></div><div class="cal-day" data-day="6"><div class="day-num">6</div><div class="special-label">🏖️ Feriado RJ</div><button class="add-post-btn" onclick="openModal(0,6,true)">＋ post</button></div><div class="cal-day" data-day="7"><div class="day-num">7</div><button class="add-post-btn" onclick="openModal(0,7,true)">＋ post</button></div><div class="cal-day" data-day="8"><div class="day-num">8</div><button class="add-post-btn" onclick="openModal(0,8,true)">＋ post</button></div><div class="cal-day" data-day="9"><div class="day-num">9</div><button class="add-post-btn" onclick="openModal(0,9,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="10"><div class="day-num">10</div><button class="add-post-btn" onclick="openModal(0,10,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="11"><div class="day-num">11</div><button class="add-post-btn" onclick="openModal(0,11,true)">＋ post</button></div><div class="cal-day" data-day="12"><div class="day-num">12</div><button class="add-post-btn" onclick="openModal(0,12,true)">＋ post</button></div><div class="cal-day" data-day="13"><div class="day-num">13</div><button class="add-post-btn" onclick="openModal(0,13,true)">＋ post</button></div><div class="cal-day" data-day="14"><div class="day-num">14</div><button class="add-post-btn" onclick="openModal(0,14,true)">＋ post</button></div><div class="cal-day" data-day="15"><div class="day-num">15</div><button class="add-post-btn" onclick="openModal(0,15,true)">＋ post</button></div><div class="cal-day" data-day="16"><div class="day-num">16</div><button class="add-post-btn" onclick="openModal(0,16,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="17"><div class="day-num">17</div><button class="add-post-btn" onclick="openModal(0,17,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="18"><div class="day-num">18</div><button class="add-post-btn" onclick="openModal(0,18,true)">＋ post</button></div><div class="cal-day" data-day="19"><div class="day-num">19</div><button class="add-post-btn" onclick="openModal(0,19,true)">＋ post</button></div><div class="cal-day" data-day="20"><div class="day-num">20</div><button class="add-post-btn" onclick="openModal(0,20,true)">＋ post</button></div><div class="cal-day" data-day="21"><div class="day-num">21</div><button class="add-post-btn" onclick="openModal(0,21,true)">＋ post</button></div><div class="cal-day" data-day="22"><div class="day-num">22</div><button class="add-post-btn" onclick="openModal(0,22,true)">＋ post</button></div><div class="cal-day" data-day="23"><div class="day-num">23</div><button class="add-post-btn" onclick="openModal(0,23,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="24"><div class="day-num">24</div><button class="add-post-btn" onclick="openModal(0,24,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="25"><div class="day-num">25</div><button class="add-post-btn" onclick="openModal(0,25,true)">＋ post</button></div><div class="cal-day" data-day="26"><div class="day-num">26</div><button class="add-post-btn" onclick="openModal(0,26,true)">＋ post</button></div><div class="cal-day" data-day="27"><div class="day-num">27</div><button class="add-post-btn" onclick="openModal(0,27,true)">＋ post</button></div><div class="cal-day" data-day="28"><div class="day-num">28</div><button class="add-post-btn" onclick="openModal(0,28,true)">＋ post</button></div><div class="cal-day" data-day="29"><div class="day-num">29</div><button class="add-post-btn" onclick="openModal(0,29,true)">＋ post</button></div><div class="cal-day" data-day="30"><div class="day-num">30</div><button class="add-post-btn" onclick="openModal(0,30,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="31"><div class="day-num">31</div><button class="add-post-btn" onclick="openModal(0,31,true)">＋ post</button></div></div></div></div></div><div class="month-block" id="month-1"><div class="month-header"><div class="month-title">Fevereiro <em>2026</em></div><div class="month-badge">Mês 2</div></div><div class="month-notes" contenteditable="true" data-month="2" placeholder="Descreva a campanha do mês, promoções, objetivos, datas importantes…"></div><div class="plan-panel">
     <div class="plan-header-row">
       <span class="plan-icon">📋</span>
       <span>Planejamento do Mês</span>
@@ -364,29 +377,29 @@
     <div class="plan-grid">
       <div class="plan-cell">
         <div class="plan-label"><span>🎯</span> Objetivos de Campanha</div>
-        <textarea class="plan-input tall" placeholder="Ex: Aumentar leads, lançar promoção, gerar awareness…" onchange="savePlanField(4,'objetivos',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: Aumentar leads, lançar promoção, gerar awareness…" onchange="savePlanField(4,'objetivos',this.value)">Aumentar alcance dentro da cidade de Angra com vendas e manutenção.</textarea>
       </div>
       <div class="plan-cell">
         <div class="plan-label"><span>💰</span> Investimento em Mídia</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 1.000 — Meta Ads + Google Ads…" onchange="savePlanField(4,'investimento',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: R$ 1.000 — Meta Ads + Google Ads…" onchange="savePlanField(4,'investimento',this.value)">300 reais.</textarea>
       </div>
       <div class="plan-cell">
         <div class="plan-label"><span>💸</span> Tráfego Pago</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 600 Meta Ads (feed + stories), R$ 400 Google. Públicos, segmentações…" onchange="savePlanField(4,'trafego',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: R$ 600 Meta Ads (feed + stories), R$ 400 Google. Públicos, segmentações…" onchange="savePlanField(4,'trafego',this.value)">300 reais em meta ads.</textarea>
       </div>
       <div class="plan-cell">
         <div class="plan-label"><span>🌟</span> Influenciadores</div>
-        <textarea class="plan-input tall" placeholder="Ex: @perfil — tipo de conteúdo, formato, prazo…" onchange="savePlanField(4,'influenciadores',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: @perfil — tipo de conteúdo, formato, prazo…" onchange="savePlanField(4,'influenciadores',this.value)">Nenhum.</textarea>
       </div>
       <div class="plan-cell" style="border-right:none">
         <div class="plan-label"><span>👤</span> Persona do Mês</div>
-        <textarea class="plan-input tall" placeholder="Ex: Público-alvo, faixa etária, dores, plataformas que usa…" onchange="savePlanField(4,'persona',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: Público-alvo, faixa etária, dores, plataformas que usa…" onchange="savePlanField(4,'persona',this.value)">Pessoas de 25+, comercio e condomínios.</textarea>
       </div>
     </div>
     <div class="plan-grid-bottom">
       <div class="plan-cell-full">
         <div class="plan-label"><span>📝</span> Observações Gerais</div>
-        <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(4,'observacoes',this.value)"></textarea>
+        <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(4,'observacoes',this.value)">Alinhar nova captação de material e apresentação de site.</textarea>
       </div>
     </div>
   </div><div class="cal-grid-outer"><div class="cal-dow"><div class="cal-dow-cell wknd">Dom</div><div class="cal-dow-cell">Seg</div><div class="cal-dow-cell">Ter</div><div class="cal-dow-cell">Qua</div><div class="cal-dow-cell">Qui</div><div class="cal-dow-cell">Sex</div><div class="cal-dow-cell wknd">Sáb</div></div><div class="cal-weeks"><div class="cal-week"><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day" data-day="1"><div class="day-num">1</div><div class="special-label">🤥 Dia da Mentira</div>
@@ -815,14 +828,14 @@
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal">
     <div class="modal-header">
-      <h3>Editar Post · <span id="modalDateLabel"></span></h3>
+      <h3>Editar Post · <span id="modalDateLabel">4/1/2026</span></h3>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-body">
       <div class="form-group">
         <label>Tipo de Conteúdo</label>
         <div class="type-grid">
-          <div class="type-opt" data-type="arte" onclick="selectType('arte')">🎨 Arte</div>
+          <div class="type-opt selected" data-type="arte" onclick="selectType('arte')">🎨 Arte</div>
           <div class="type-opt" data-type="foto" onclick="selectType('foto')">📸 Foto</div>
           <div class="type-opt" data-type="story" onclick="selectType('story')">📱 Story</div>
           <div class="type-opt" data-type="reels" onclick="selectType('reels')">🎬 Reels</div>
@@ -833,7 +846,7 @@
         <label>Título / Frase da Postagem</label>
         <input type="text" id="modalPostTitle" placeholder="Ex: Nem todo dia precisa ser correria">
       </div>
-      <div class="form-group" id="fieldImgObs" style="display:none">
+      <div class="form-group" id="fieldImgObs" style="">
         <label>Observações de Imagem / Vídeo</label>
         <textarea id="modalImgObs" placeholder="Descreva a imagem ideal, enquadramento, luz, referências…" style="min-height:120px"></textarea>
       </div>
@@ -850,14 +863,13 @@ Slide 2: …" style="min-height:160px"></textarea>
         <label>Nº de Slides</label>
         <input type="text" id="modalSlidesNum" placeholder="Ex: 7 slides">
       </div>
-      <div class="form-group" id="fieldCaption">
+      <div class="form-group" id="fieldCaption" style="">
         <label>Legenda completa</label>
         <textarea id="modalCaption" placeholder="Texto, hashtags, telefone…"></textarea>
       </div>
       <div class="form-group">
         <div class="mgal-label">Imagens / Fotos <span class="mgal-hint">— arraste ou clique em ＋</span></div>
-        <div class="modal-gallery" id="modalGallery" ondragover="event.preventDefault();this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')" ondrop="handleDrop(event)">
-        </div>
+        <div class="modal-gallery" id="modalGallery" ondragover="event.preventDefault();this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')" ondrop="handleDrop(event)"><button class="mgal-add" type="button"><span style="font-size:22px">＋</span><span class="lbl">foto</span></button></div>
       </div>
       <div class="form-group" id="fieldVideoLink" style="display:none">
         <label>🎬 Link do Vídeo</label>
@@ -931,603 +943,9 @@ Slide 2: …" style="min-height:160px"></textarea>
   </div>
 </div>
 
-<div class="toast" id="toast"></div>
+<div class="toast show" id="toast">✅ Post salvo!</div>
 
-<script id="persistedCalendarState">window.__PERSISTED_CALENDAR_STATE__ = window.__PERSISTED_CALENDAR_STATE__ || null;</script>
-<script>
-// ─────────────────────────────────────────────
-//  DATA STRUCTURES
-// ─────────────────────────────────────────────
-
-const MONTH_NAMES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
-
-
-const GITHUB_CONFIG = {
-  owner: 'DigiThree-Planejamentos',
-  repo: 'calendario-refricenter',
-  path: 'index.html',
-  branch: 'main'
-};
-
-const GITHUB_TOKEN_STORAGE_KEY = 'calendar_github_token';
-const GITHUB_LEGACY_KEYS = ['github_token','github_owner','github_repo','github_branch','github_path'];
-
-function getGithubConfig(){
-  return { ...GITHUB_CONFIG };
-}
-
-function clearLegacyGithubConfig(){
-  GITHUB_LEGACY_KEYS.forEach(key => localStorage.removeItem(key));
-}
-
-function getGithubToken(forceReset = false){
-  clearLegacyGithubConfig();
-  if(forceReset) localStorage.removeItem(GITHUB_TOKEN_STORAGE_KEY);
-  let token = localStorage.getItem(GITHUB_TOKEN_STORAGE_KEY);
-  if(!token){
-    token = window.prompt('Cole seu token do GitHub com permissão de escrita no repositório:');
-    if(!token) return null;
-    token = token.trim();
-    if(!token) return null;
-    localStorage.setItem(GITHUB_TOKEN_STORAGE_KEY, token);
-  }
-  return token;
-}
-
-function resetGithubToken(){
-  clearLegacyGithubConfig();
-  localStorage.removeItem(GITHUB_TOKEN_STORAGE_KEY);
-  const token = window.prompt('Cole o novo token do GitHub:');
-  if(token && token.trim()){
-    localStorage.setItem(GITHUB_TOKEN_STORAGE_KEY, token.trim());
-    showToast('Token GitHub atualizado.');
-  } else {
-    showToast('Token GitHub removido.');
-  }
-}
-
-// Each month: { year, month(1-12), firstDow(0=Sun), days, notes, special:{day:'label'} }
-const MONTHS_CONFIG = [
-  { year:2026, month:1,  firstDow:4, days:31, notes:'', special:{1:'🎆 Ano Novo',6:'🏖️ Feriado RJ'} },
-  { year:2026, month:2,  firstDow:0, days:28, notes:'', special:{16:'🎭 Carnaval',17:'🎭 Carnaval',18:'🎭 Quarta-feira de Cinzas'} },
-  { year:2026, month:3,  firstDow:0, days:31, notes:'', special:{8:'👩 Dia da Mulher',20:'🌿 Início do Outono'} },
-  { year:2026, month:4,  firstDow:3, days:30, notes:'Refricenter — 13 publicações (5 artes + 4 reels + 2 carrosséis + 2 stories) · @refricenterangra · 1.653 seguidores', special:{1:'🤥 Dia da Mentira',2:'🧩 Consciência do Autismo',3:'✝️ Sexta-Feira Santa',5:'🐣 Páscoa',6:'🙏 São Benedito',7:'🌍 Dia Mundial da Saúde',8:'🎗️ Combate ao Câncer',13:'💋 Dia do Beijo',14:'☕ Dia Mundial do Café',21:'🇧🇷 Tiradentes',22:'🌍 Dia da Terra',23:'⚔️ São Jorge',24:'🥩 Dia Int. do Churrasco',28:'👵 Dia da Sogra',30:'🎷 Dia Int. do Jazz'} },
-  { year:2026, month:5,  firstDow:5, days:31, notes:'', special:{10:'💐 Dia das Mães',31:'🟡 Fim Maio Amarelo'} },
-  { year:2026, month:6,  firstDow:1, days:30, notes:'', special:{5:'🌍 Meio Ambiente',12:'💑 Dia dos Namorados'} },
-  { year:2026, month:7,  firstDow:3, days:31, notes:'', special:{} },
-  { year:2026, month:8,  firstDow:6, days:31, notes:'', special:{9:'👨 Dia dos Pais'} },
-  { year:2026, month:9,  firstDow:2, days:30, notes:'', special:{7:'🇧🇷 Independência',15:'🛍️ Dia do Cliente',22:'🌸 Primavera'} },
-  { year:2026, month:10, firstDow:4, days:31, notes:'', special:{2:'👶 Dia das Crianças',12:'🇧🇷 N.Sra. Aparecida',31:'🎃 Halloween'} },
-  { year:2026, month:11, firstDow:0, days:30, notes:'', special:{2:'✝️ Finados',15:'🇧🇷 Proclamação Rep.',20:'⚫ Black Friday'} },
-  { year:2026, month:12, firstDow:2, days:31, notes:'', special:{8:'🎄 Imaculada Conceição',25:'🎄 Natal',31:'🥂 Réveillon'} }
-];
-
-// Pre-filled posts per month [{ month, day, type, title, pending, trafego, perfil }]
-let POSTS = [{"month":4,"day":1,"type":"arte","title":"Tudo que envolve climatização, você encontra aqui","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Quando o assunto é climatização, ter variedade faz toda a diferença.\n\nNa Refricenter, você encontra uma linha completa de equipamentos, peças técnicas, conexões, sistemas de aquecimento e soluções para diferentes necessidades — seja residencial, comercial ou náutica.\n\nMais do que oferecer produtos, nosso compromisso é garantir eficiência, segurança e funcionamento correto em cada aplicação.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Posicionamento institucional + autoridade + variedade de portfólio. Mostrar que a Refricenter é referência completa em climatização na região.","imgObs":"Composição com mix de produtos (ar-condicionado, boiler, conexões, filtros, exaustor) conectados visualmente em layout limpo. Fundo escuro com destaque nos equipamentos. Logo Refricenter presente.\n\nTexto da arte:\nTudo que envolve climatização,\nvocê encontra aqui.\nSoluções completas\nem um só lugar.\nRefricenter","roteiro":""},{"month":4,"day":2,"type":"story","title":"Atendimento Refricenter","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"","descricao":"Facilitar contato + reforçar presença e acessibilidade. Story simples e funcional com horários e WhatsApp.","imgObs":"Identidade visual da marca (vermelho + preto), layout limpo com horários em destaque e botão de WhatsApp.\n\nTexto do story:\nSegunda a sexta\n08h às 18h\nSábado\n08h às 13h\n📲 Fale com a gente no WhatsApp\nSeu atendimento começa aqui.","roteiro":""},{"month":4,"day":3,"type":"reels","title":"Falta só isso aqui…","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Conforto não é luxo. É qualidade de vida.\n\nUm ambiente climatizado melhora o descanso, reduz o desgaste no dia a dia e proporciona mais bem-estar em todos os momentos.\n\nNa Refricenter, você encontra as melhores soluções em ar-condicionado, com orientação técnica e instalação correta para garantir desempenho e durabilidade.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Trend + identificação + transformação. Usar formato viral pra mostrar que o ar-condicionado é o que falta pra melhorar o dia a dia.\n\nInspiração: https://www.instagram.com/reel/DUjNU5HD0ui/","imgObs":"Gravação com pessoa gesticulando \"pouquinho\" com os dedos → corte para o ar-condicionado. Edição rápida, trend style.","roteiro":"Pessoa:\n\"Tá faltando isso aqui pra sua vida ficar muito melhor…\"\n(gesto com o dedo — pouquinho)\n(aponta pro ar-condicionado)"},{"month":4,"day":5,"type":"story","title":"Feliz Páscoa 🐰","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"","descricao":"Emocional + marca presente em data comemorativa. Sem venda direta, apenas presença institucional.","imgObs":"Arte temática de Páscoa com tons suaves, elementos sutis (coelho, ovos), identidade Refricenter integrada. Clima acolhedor.\n\nTexto do story:\n🐰 Feliz Páscoa!\nQue este momento seja de tranquilidade, conforto e conexão com quem você ama.\nQue sua casa esteja cheia de leveza, bem-estar e aquele clima agradável que transforma qualquer encontro em algo especial.\nRefricenter.","roteiro":""},{"month":4,"day":7,"type":"arte","title":"Se é pra gelar de verdade, escolha certo","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Para ter resultado de verdade, é preciso fazer certo desde o início.\n\nA escolha do equipamento, a instalação adequada e o suporte técnico fazem toda a diferença no desempenho e na durabilidade do sistema.\n\nNa Refricenter, você encontra tudo o que precisa para garantir um ambiente climatizado com segurança e eficiência.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Autoridade técnica + incentivo à decisão consciente. Reforçar que resultado depende de escolha certa.","imgObs":"Fundo impactante, frase em destaque grande. Equipamento parcialmente visível como apoio. Tom direto e confiante.\n\nTexto da arte:\nSe é pra gelar de verdade,\nescolha certo.\nRefricenter","roteiro":""},{"month":4,"day":9,"type":"reels","title":"Não pode instalar? Tem solução.","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Cada espaço exige uma solução adequada.\n\nNem sempre é possível instalar um sistema convencional, mas isso não significa abrir mão do conforto.\n\nNa Refricenter, trabalhamos com alternativas práticas e eficientes, como ar-condicionado portátil, garantindo climatização mesmo em ambientes com limitações.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Quebra de objeção — mostrar que existe alternativa para quem acha que não pode ter ar-condicionado. Foco no ar portátil.\n\nInspiração: https://www.instagram.com/reel/DOqmfcNjOUC/","imgObs":"Roteiro narrativo com cortes dinâmicos. Começa com dúvida, evolui para solução. Mostrar o ar-condicionado portátil funcionando em ambiente real.","roteiro":"Cena 1 – Pessoa olhando o ambiente (apartamento)\n\"Cara… aqui não dá pra instalar ar-condicionado, né?\"\n\"Sem espaço, não pode furar parede… complicado.\"\n\nCena 2 – Corte (entrada do técnico ou da solução)\n\"Na verdade… dá sim. Só não pode ser qualquer solução.\"\n\nCena 3 – Mostra o ar-condicionado portátil\n\"Tem opção prática, sem obra, sem quebradeira… e que resolve de verdade.\"\n\nCena 4 – Ar funcionando\n\"Você liga, ajusta a temperatura… e pronto. Ambiente confortável na hora.\"\n\nCena 5 – Pessoa já relaxando\n\"E o melhor… você não precisa abrir mão do conforto por causa do espaço.\"\n\nCena 6 – Fechamento\n\"Se você acha que não dá pra instalar, talvez só esteja faltando conhecer a solução certa.\"\n\"Fala com a Refricenter.\""},{"month":4,"day":13,"type":"arte","title":"Mais estrutura para quem quer crescer","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Estrutura adequada é essencial para manter seu negócio funcionando.\n\nEquipamentos de qualidade garantem desempenho contínuo, evitam falhas e contribuem para a eficiência da operação no dia a dia.\n\nNa Refricenter, você encontra soluções completas para ambientes comerciais, com orientação técnica e produtos confiáveis.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Foco no público B2B — equipamentos comerciais como investimento para negócios que dependem de refrigeração.","imgObs":"Composição com equipamentos reais usados em negócios (máquina de gelo, exaustor, ar-condicionado, filtro central, sistema de gás/conexões). Layout profissional, tom corporativo.\n\nTexto da arte:\nMais estrutura\npara quem quer crescer.\nRefricenter","roteiro":""},{"month":4,"day":15,"type":"reels","title":"40° lá fora… e aqui dentro?","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 O controle da temperatura faz toda a diferença no seu dia.\n\nAmbientes climatizados proporcionam mais conforto, melhor rendimento e qualidade de vida, seja em casa ou no trabalho.\n\nNa Refricenter, você encontra soluções em climatização pensadas para entregar desempenho, economia e durabilidade.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Sensação — contraste entre calor externo e conforto interno. Formato visual e rápido.\n\nInspiração: https://br.pinterest.com/pin/13229392653360091/","imgObs":"Pessoa chegando com calor, suando → entrada no ambiente climatizado → alívio imediato. Edição com transição de temperatura (filtro quente → filtro frio).","roteiro":"Pessoa com calor entrando no ambiente, suando.\nCorte: temperatura caindo (texto ou efeito visual).\nLiga o ar-condicionado.\nSe refresca — alívio no rosto."},{"month":4,"day":17,"type":"carrossel","title":"Se refrescou na ilha… e em casa?","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"3 slides","slides":"Slide 1:\nSe refrescou nas ilhas de Angra… 🌊\n\nSlide 2:\nE quando chegou em casa…\nteve o mesmo conforto?\n\nSlide 3:\nO calor não precisa te acompanhar.\nCom a Refricenter,\no conforto continua dentro de casa.","caption":"🔧 Aproveitar o ambiente também é ter conforto dentro de casa.\n\nDepois de um dia de calor, nada melhor do que retornar para um espaço preparado para oferecer bem-estar e temperatura ideal.\n\nNa Refricenter, você encontra soluções completas em climatização para transformar sua rotina com mais qualidade e eficiência.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Conexão local — usar a identidade de Angra (ilhas, praia, calor) para criar identificação e trazer pro ambiente doméstico.","imgObs":"Estética praiana no início, transição para ambiente de casa. Cores que remetam a Angra (azul, verde-água) + identidade Refricenter.","roteiro":""},{"month":4,"day":21,"type":"arte","title":"O conforto que sua mãe merece, todos os dias","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Conforto também é uma forma de cuidado.\n\nProporcionar um ambiente agradável e bem climatizado é investir no bem-estar de quem você ama todos os dias.\n\nNeste Dia das Mães, conte com a Refricenter para encontrar a solução ideal em climatização, com qualidade, segurança e eficiência.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Abertura da campanha de Dia das Mães — emocional + institucional. Conectar conforto térmico com cuidado materno.","imgObs":"Arte temática Dia das Mães com tons suaves (rosa, azul claro, branco). Clima de cuidado e acolhimento. Coração azul Refricenter como elemento.\n\nTexto da arte:\nO conforto que sua mãe merece,\ntodos os dias.\nDia das Mães Refricenter 💙","roteiro":""},{"month":4,"day":23,"type":"reels","title":"Se conforto é prioridade… isso faz sentido","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Mais do que um presente, é qualidade de vida.\n\nAmbientes confortáveis fazem diferença na rotina, no descanso e no bem-estar de quem mais importa.\n\nNa Refricenter, você encontra soluções que vão além do produto — entregam conforto todos os dias.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Reels narrativo emocional — fala direta com o público sobre presentear com qualidade de vida. Continuação da campanha Dia das Mães.","imgObs":"Talking head ou narração com imagens de apoio (mãe em casa, ambiente confortável, ar-condicionado). Tom intimista e emocional.","roteiro":"1. \"Você já parou pra pensar que o melhor presente… é aquele que a pessoa sente todos os dias?\"\n2. \"Tenho certeza que a sua mãe sempre cuidou de todo mundo… agora é a sua vez de cuidar dela.\"\n3. \"Não é só um ar-condicionado… é qualidade de vida dentro de casa.\"\n4. \"Um ambiente confortável muda o descanso, o humor… muda tudo.\"\n5. \"Conforto não é luxo… é cuidado com quem você ama.\"\n6. \"Se é pra presentear, que seja com algo que realmente faça sentido. Fala com a Refricenter.\""},{"month":4,"day":27,"type":"arte","title":"Conforto também é independência","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Ter conforto é ter mais autonomia no dia a dia.\n\nUm ambiente preparado proporciona mais praticidade, independência e qualidade de vida dentro de casa.\n\nNa Refricenter, você encontra soluções que tornam a rotina mais leve e funcional.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Continuação da campanha Dia das Mães com ângulo de empoderamento e autonomia.","imgObs":"Arte temática Dia das Mães, mantendo a identidade visual da campanha (tons suaves + azul Refricenter). Frase forte em destaque.\n\nTexto da arte:\nConforto também\né independência.\nDia das Mães Refricenter 💙","roteiro":""},{"month":4,"day":29,"type":"carrossel","title":"O presente ideal existe e está aqui","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"7 slides","slides":"🟣 Slide 1 (Capa):\nO presente ideal existe.\nE você encontra aqui.\nDia das Mães Refricenter 💙\n\n❄️ Slide 2 – Ar-condicionado:\nConforto todos os dias\nUm ambiente climatizado transforma o descanso, melhora o bem-estar e faz diferença na rotina dela o ano inteiro.\n\n🔥 Slide 3 – Boiler / Aquecedor:\nÁgua quente sempre pronta\nMais praticidade no dia a dia, conforto no banho e eficiência para tornar cada momento mais agradável.\n\n💧 Slide 4 – Filtro Central / Purificador:\nCuidado que vem da água\nMais qualidade, mais segurança e mais saúde para toda a casa — um cuidado essencial no dia a dia.\n\n🌬️ Slide 5 – Exaustor / Ventilação:\nAmbiente leve e saudável\nMelhor circulação de ar, mais conforto térmico e um espaço mais agradável para viver todos os dias.\n\n⚙️ Slide 6 – Lava e Seca:\nMais praticidade na rotina\nTecnologia e eficiência para facilitar o dia a dia e garantir mais tempo para o que realmente importa.\n\n🟢 Slide 7 – CTA Final:\nEscolha com quem entende\nNeste Dia das Mães, presenteie com conforto, praticidade e qualidade de vida.\nFale com a Refricenter e encontre a solução ideal.","caption":"🔧 Escolher o presente ideal é pensar no dia a dia de quem você ama.\n\nNa Refricenter, você encontra soluções que vão além do produto — entregam conforto, praticidade e qualidade de vida em todos os momentos.\n\nAr-condicionado, aquecedores, filtros, ventilação e equipamentos que fazem diferença real na rotina.\n\nNeste Dia das Mães, presenteie com algo que ela vai sentir todos os dias.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Carrossel de campanha com foco em conversão. Cada slide conecta um produto com benefício emocional. Encerramento da campanha Dia das Mães.","imgObs":"Arte temática de Dia das Mães (cores suaves, conforto, casa). Cada slide com um produto diferente + ambientação (mãe em casa, conforto, rotina leve).","roteiro":""}];
-
-// Ensure imgs array on every post
-POSTS = POSTS.map(p => ({...p, imgs: p.imgs||[], caption:p.caption||'', descricao:p.descricao||'', imgObs:p.imgObs||'', roteiro:p.roteiro||'', videoLink:p.videoLink||'', slides:p.slides||'', slidesNum:p.slidesNum||'', postado:p.postado||false}));
-
-// ── Planning data per month (saved separately) ──
-let PLAN_DATA = {"1":{},"2":{},"3":{},"4":{"objetivos":"Aumentar alcance dentro da cidade de Angra com vendas e manutenção.","investimento":"300 reais.","trafego":"300 reais em meta ads.","influenciadores":"Nenhum.","persona":"Pessoas de 25+, comercio e condomínios.","observacoes":"Alinhar nova captação de material e apresentação de site."},"5":{},"6":{},"7":{},"8":{},"9":{},"10":{},"11":{},"12":{}};
-
-function getPlan(m){ return PLAN_DATA[m] || (PLAN_DATA[m]={}); }
-function savePlanField(m, field, val){ getPlan(m)[field] = val; }
-
-
-function getHeaderState(){
-  return {
-    client: (document.getElementById('hdrClient')?.innerText || '').trim(),
-    year: (document.getElementById('hdrYear')?.innerText || '').trim(),
-    sub: (document.getElementById('hdrSub')?.innerText || '').trim()
-  };
-}
-
-function setHeaderState(header){
-  if(!header) return;
-  if(typeof header.client === 'string' && document.getElementById('hdrClient')) document.getElementById('hdrClient').innerText = header.client;
-  if(typeof header.year === 'string' && document.getElementById('hdrYear')) document.getElementById('hdrYear').innerText = header.year;
-  if(typeof header.sub === 'string' && document.getElementById('hdrSub')) document.getElementById('hdrSub').innerText = header.sub;
-}
-
-function collectCalendarState(){
-  const monthNotes = {};
-  document.querySelectorAll('.month-notes[data-month]').forEach(el => {
-    monthNotes[String(el.dataset.month)] = el.innerHTML;
-  });
-
-  const planDataFromDom = JSON.parse(JSON.stringify(PLAN_DATA || {}));
-  document.querySelectorAll('.plan-panel').forEach((panel, idx) => {
-    const monthKey = String(idx + 1);
-    const fields = panel.querySelectorAll('.plan-input');
-    if(!planDataFromDom[monthKey]) planDataFromDom[monthKey] = {};
-    const keys = ['objetivos','investimento','trafego','influenciadores','persona','observacoes'];
-    fields.forEach((field, fieldIdx) => {
-      const key = keys[fieldIdx];
-      if(key) planDataFromDom[monthKey][key] = field.value || '';
-    });
-  });
-
-  return {
-    header: getHeaderState(),
-    posts: JSON.parse(JSON.stringify(POSTS || [])),
-    planData: planDataFromDom,
-    monthsConfig: JSON.parse(JSON.stringify(MONTHS_CONFIG || [])),
-    monthNotes
-  };
-}
-
-function applyPersistedCalendarState(state){
-  if(!state || typeof state !== 'object') return;
-
-  if(Array.isArray(state.monthsConfig) && state.monthsConfig.length){
-    MONTHS_CONFIG.length = 0;
-    state.monthsConfig.forEach(item => MONTHS_CONFIG.push({ ...item }));
-  }
-
-  if(Array.isArray(state.posts)){
-    POSTS = state.posts.map(p => ({
-      month:Number(p.month), day:Number(p.day), type:p.type || 'arte', title:p.title || '',
-      pending:!!p.pending, trafego:!!p.trafego, perfil:p.perfil || '',
-      imgs:Array.isArray(p.imgs) ? p.imgs.slice() : [], caption:p.caption || '', descricao:p.descricao || '',
-      imgObs:p.imgObs || '', roteiro:p.roteiro || '', videoLink:p.videoLink || '',
-      slides:p.slides || '', slidesNum:p.slidesNum || '', postado:!!p.postado
-    }));
-  }
-
-  if(state.planData && typeof state.planData === 'object'){
-    PLAN_DATA = state.planData;
-  }
-
-  setHeaderState(state.header);
-
-  requestAnimationFrame(() => {
-    if(state.monthNotes && typeof state.monthNotes === 'object'){
-      document.querySelectorAll('.month-notes[data-month]').forEach(el => {
-        const value = state.monthNotes[String(el.dataset.month)];
-        if(typeof value === 'string') el.innerHTML = value;
-      });
-    }
-
-    document.querySelectorAll('.plan-panel').forEach((panel, idx) => {
-      const monthKey = String(idx + 1);
-      const plan = PLAN_DATA[monthKey] || {};
-      const values = [
-        plan.objetivos || '',
-        plan.investimento || '',
-        plan.trafego || '',
-        plan.influenciadores || '',
-        plan.persona || '',
-        plan.observacoes || ''
-      ];
-      panel.querySelectorAll('.plan-input').forEach((field, fieldIdx) => {
-        field.value = values[fieldIdx] || '';
-      });
-    });
-  });
-}
-
-const TYPE_ICONS={arte:'🎨',foto:'📸',story:'📱',reels:'🎬',carrossel:'🖼'};
-const TYPE_LABELS={arte:'Arte',foto:'Foto',story:'Story',reels:'Reels',carrossel:'Carrossel'};
-
-
-let currentMonthIdx=null, currentDay=null, currentPostIdx=null;
-let modalType='arte', modalImgs=[];
-let _editMode=true;
-let _lbMonthIdx=null, _lbDay=null, _lbIdx=0;
-
-const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-
-function getPost(mIdx,day){return POSTS.find(p=>p.month===MONTHS_CONFIG[mIdx].month&&p.day===day);}
-function getPostIdx(mIdx,day){return POSTS.findIndex(p=>p.month===MONTHS_CONFIG[mIdx].month&&p.day===day);}
-
-// ── Stats ──
-function updateStats(){
-  const c={total:0,arte:0,foto:0,story:0,reels:0,carrossel:0,pend:0,postado:0};
-  POSTS.forEach(p=>{c.total++;if(c[p.type]!==undefined)c[p.type]++;if(p.pending)c.pend++;if(p.postado)c.postado++;});
-  ['Total','Arte','Foto','Story','Reels','Carrossel','Pend','Postado'].forEach(k=>{
-    const el=document.getElementById('stat'+k);
-    if(el)el.textContent=c[k.toLowerCase()];
-  });
-}
-
-// ── Build Month Nav ──
-function buildMonthNav(){
-  const nav=document.getElementById('monthNav');
-  MONTHS_CONFIG.forEach((mc,i)=>{
-    const btn=document.createElement('button');
-    btn.className='month-btn';
-    btn.textContent=MONTH_NAMES[mc.month-1].substring(0,3);
-    btn.onclick=()=>scrollToMonth(i);
-    btn.id='mnav'+i;
-    nav.appendChild(btn);
-  });
-}
-
-function scrollToMonth(i){
-  const el=document.getElementById('month-'+i);
-  if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
-}
-
-// ── Render All Months ──
-function renderAll(){
-  const container=document.getElementById('monthsContainer');
-  container.innerHTML='';
-  MONTHS_CONFIG.forEach((mc,mIdx)=>{
-    container.appendChild(buildMonthBlock(mc,mIdx));
-  });
-  updateStats();
-}
-
-function buildPlanPanel(mc){
-  const m = mc.month;
-  const p = getPlan(m);
-  const panel = document.createElement('div');
-  panel.className = 'plan-panel';
-
-  panel.innerHTML = `
-    <div class="plan-header-row">
-      <span class="plan-icon">📋</span>
-      <span>Planejamento do Mês</span>
-    </div>
-    <div class="plan-grid">
-      <div class="plan-cell">
-        <div class="plan-label"><span>🎯</span> Objetivos de Campanha</div>
-        <textarea class="plan-input tall" placeholder="Ex: Aumentar leads, lançar promoção, gerar awareness…" onchange="savePlanField(${m},'objetivos',this.value)">${p.objetivos||''}</textarea>
-      </div>
-      <div class="plan-cell">
-        <div class="plan-label"><span>💰</span> Investimento em Mídia</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 1.000 — Meta Ads + Google Ads…" onchange="savePlanField(${m},'investimento',this.value)">${p.investimento||''}</textarea>
-      </div>
-      <div class="plan-cell">
-        <div class="plan-label"><span>💸</span> Tráfego Pago</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 600 Meta Ads (feed + stories), R$ 400 Google. Públicos, segmentações…" onchange="savePlanField(${m},'trafego',this.value)">${p.trafego||''}</textarea>
-      </div>
-      <div class="plan-cell">
-        <div class="plan-label"><span>🌟</span> Influenciadores</div>
-        <textarea class="plan-input tall" placeholder="Ex: @perfil — tipo de conteúdo, formato, prazo…" onchange="savePlanField(${m},'influenciadores',this.value)">${p.influenciadores||''}</textarea>
-      </div>
-      <div class="plan-cell" style="border-right:none">
-        <div class="plan-label"><span>👤</span> Persona do Mês</div>
-        <textarea class="plan-input tall" placeholder="Ex: Público-alvo, faixa etária, dores, plataformas que usa…" onchange="savePlanField(${m},'persona',this.value)">${p.persona||''}</textarea>
-      </div>
-    </div>
-    <div class="plan-grid-bottom">
-      <div class="plan-cell-full">
-        <div class="plan-label"><span>📝</span> Observações Gerais</div>
-        <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(${m},'observacoes',this.value)">${p.observacoes||''}</textarea>
-      </div>
-    </div>
-  `;
-  return panel;
-}
-
-function buildMonthBlock(mc,mIdx){
-  const block=document.createElement('div');
-  block.className='month-block';
-  block.id='month-'+mIdx;
-
-  // Header
-  const mh=document.createElement('div');
-  mh.className='month-header';
-  mh.innerHTML=`<div class="month-title">${MONTH_NAMES[mc.month-1]} <em>${mc.year}</em></div><div class="month-badge">Mês ${mc.month}</div>`;
-  block.appendChild(mh);
-
-  // Notes
-  const mn=document.createElement('div');
-  mn.className='month-notes';
-  mn.contentEditable='true';
-  mn.setAttribute('data-month', mc.month);
-  mn.setAttribute('placeholder', 'Descreva a campanha do mês, promoções, objetivos, datas importantes…');
-  mn.innerHTML = mc.notes || '';
-  mn.addEventListener('input', ()=>{ MONTHS_CONFIG[mIdx].notes = mn.innerHTML; });
-  block.appendChild(mn);
-
-  // Planning panel
-  block.appendChild(buildPlanPanel(mc));
-  const outer=document.createElement('div');
-  outer.className='cal-grid-outer';
-  // DOW header
-  const dow=document.createElement('div');
-  dow.className='cal-dow';
-  ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'].forEach((d,i)=>{
-    const c=document.createElement('div');
-    c.className='cal-dow-cell'+(i===0||i===6?' wknd':'');
-    c.textContent=d;
-    dow.appendChild(c);
-  });
-  outer.appendChild(dow);
-
-  // Build weeks array
-  const weeks=[];
-  let week=[];
-  // pad start
-  for(let p=0;p<mc.firstDow;p++) week.push(0);
-  for(let d=1;d<=mc.days;d++){
-    week.push(d);
-    if(week.length===7){weeks.push(week);week=[];}
-  }
-  if(week.length>0){while(week.length<7)week.push(0);weeks.push(week);}
-
-  const calWeeks=document.createElement('div');
-  calWeeks.className='cal-weeks';
-
-  weeks.forEach(wk=>{
-    const weekEl=document.createElement('div');
-    weekEl.className='cal-week';
-    wk.forEach((day,i)=>{
-      const isWknd=(i===0||i===6);
-      const cell=document.createElement('div');
-      cell.className='cal-day'+(day===0?' empty':'')+(isWknd&&day>0?' wknd-col':'');
-      if(day>0){
-        cell.dataset.day=day;
-        let html=`<div class="day-num">${day}</div>`;
-        if(mc.special&&mc.special[day]){
-          html+=`<div class="special-label">${mc.special[day]}</div>`;
-        }
-        const post=getPost(mIdx,day);
-        if(post){
-          const pc=post.pending?' pendente':post.postado?' postado':'';
-          let gallHtml='<div class="card-gallery">';
-          (post.imgs||[]).forEach((src,idx)=>{
-            gallHtml+=`<div class="card-thumb" onclick="event.stopPropagation();onThumbClick(${mIdx},${day},${idx})"><img src="${src}" alt=""><button class="rm-thumb" onclick="event.stopPropagation();removeCardThumb(${mIdx},${day},${idx})">✕</button></div>`;
-          });
-          gallHtml+=`<button class="add-thumb-btn" onclick="event.stopPropagation();triggerCardImg(${mIdx},${day})" title="Adicionar foto">＋</button></div>`;
-          const postadoBadge=post.postado?`<div class="postado-badge">✅ Postado</div>`:'';
-          const videoBadge=(post.type==='reels'&&post.videoLink)?`<a class="video-link-badge" href="${esc(post.videoLink)}" target="_blank" onclick="event.stopPropagation()">🎬 Ver</a>`:'';
-          const tpIcon=post.trafego?`<div class="tp-icon" title="Tráfego Pago">💸</div>`:'';
-          html+=`
-            <div class="post-card ${post.type}${pc}" onclick="openModal(${mIdx},${day})">
-              <div class="card-actions">
-                <button class="card-btn" onclick="event.stopPropagation();togglePostado(${mIdx},${day})" title="Toggle postado">${post.postado?'↩️':'✅'}</button>
-                <button class="card-btn" onclick="event.stopPropagation();openModal(${mIdx},${day})">✏️</button>
-                <button class="card-btn" onclick="event.stopPropagation();deletePostByKey(${mIdx},${day})">🗑</button>
-              </div>
-              <div class="post-type-tag">${TYPE_ICONS[post.type]||''} ${TYPE_LABELS[post.type]||post.type}${post.pending?' · ⏳':''}</div>
-              ${postadoBadge}${videoBadge}
-              <div class="post-title" contenteditable="${_editMode?'true':'false'}" spellcheck="false"
-                onclick="event.stopPropagation()"
-                onblur="updateTitle(${mIdx},${day},this.innerText)">${esc(post.title)}</div>
-              ${tpIcon}
-              ${gallHtml}
-            </div>`;
-        } else {
-          html+=`<button class="add-post-btn" onclick="openModal(${mIdx},${day},true)">＋ post</button>`;
-        }
-        cell.innerHTML=html;
-      } else {
-        cell.innerHTML='<div class="day-num"></div>';
-      }
-      weekEl.appendChild(cell);
-    });
-    calWeeks.appendChild(weekEl);
-  });
-
-  outer.appendChild(calWeeks);
-  block.appendChild(outer);
-  return block;
-}
-
-function updateTitle(mIdx,day,t){
-  const i=getPostIdx(mIdx,day);
-  if(i>=0)POSTS[i].title=t.trim();
-}
-
-// ── Modal ──
-function openModal(mIdx,day,isNew=false){
-  currentMonthIdx=mIdx; currentDay=day;
-  const idx=getPostIdx(mIdx,day); currentPostIdx=idx;
-  const post=idx>=0?POSTS[idx]:null;
-  const mc=MONTHS_CONFIG[mIdx];
-  document.getElementById('modalDateLabel').textContent=`${day}/${mc.month}/${mc.year}`;
-  modalType=post?post.type:'arte';
-  modalImgs=post?[...(post.imgs||[])]:[];
-  document.getElementById('modalPostTitle').value=post?.title||'';
-  document.getElementById('modalCaption').value=post?.caption||'';
-  document.getElementById('modalImgObs').value=post?.imgObs||'';
-  document.getElementById('modalRoteiro').value=post?.roteiro||'';
-  document.getElementById('modalSlides').value=post?.slides||'';
-  document.getElementById('modalSlidesNum').value=post?.slidesNum||'';
-  document.getElementById('modalVideoLink').value=post?.videoLink||'';
-  document.getElementById('modalPending').checked=post?.pending||false;
-  document.getElementById('modalPostado').checked=post?.postado||false;
-  document.getElementById('modalTrafego').checked=post?.trafego||false;
-  document.querySelectorAll('.type-opt').forEach(el=>el.classList.toggle('selected',el.dataset.type===modalType));
-  updateModalFields(modalType);
-  renderModalGallery();
-  document.getElementById('modalOverlay').classList.add('open');
-}
-function closeModal(){document.getElementById('modalOverlay').classList.remove('open');currentMonthIdx=null;currentDay=null;}
-function selectType(t){
-  modalType=t;
-  document.querySelectorAll('.type-opt').forEach(el=>el.classList.toggle('selected',el.dataset.type===t));
-  updateModalFields(t);
-}
-function updateModalFields(t){
-  const show=id=>{const el=document.getElementById(id);if(el)el.style.display='';};
-  const hide=id=>{const el=document.getElementById(id);if(el)el.style.display='none';};
-  ['fieldCaption','fieldImgObs','fieldRoteiro','fieldSlides','fieldSlidesNum','fieldVideoLink'].forEach(hide);
-  if(t==='story'){}
-  else if(t==='reels'){show('fieldVideoLink');show('fieldCaption');show('fieldRoteiro');}
-  else if(t==='carrossel'){show('fieldCaption');show('fieldSlides');show('fieldSlidesNum');}
-  else{show('fieldCaption');show('fieldImgObs');}
-}
-
-function renderModalGallery(){
-  const gal=document.getElementById('modalGallery');gal.innerHTML='';
-  modalImgs.forEach((src,i)=>{
-    const w=document.createElement('div');w.className='mgal-thumb';
-    w.innerHTML=`<img src="${src}" alt=""><button class="rm-btn" onclick="removeModalImg(${i})" type="button">✕</button>`;
-    gal.appendChild(w);
-  });
-  const btn=document.createElement('button');btn.className='mgal-add';btn.type='button';
-  btn.innerHTML='<span style="font-size:22px">＋</span><span class="lbl">foto</span>';
-  btn.onclick=()=>{
-    const inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.multiple=true;inp.style.display='none';document.body.appendChild(inp);
-    inp.onchange=e=>handleGalleryFiles(Array.from(e.target.files));inp.click();
-  };
-  gal.appendChild(btn);
-}
-function handleGalleryFiles(files){
-  if(!files.length)return;let n=0;
-  files.forEach(f=>{const r=new FileReader();r.onload=e=>{modalImgs.push(e.target.result);if(++n===files.length)renderModalGallery();};r.readAsDataURL(f);});
-}
-function handleDrop(e){e.preventDefault();document.getElementById('modalGallery').classList.remove('drag-over');handleGalleryFiles(Array.from(e.dataTransfer.files).filter(f=>f.type.startsWith('image/')));}
-function removeModalImg(i){modalImgs.splice(i,1);renderModalGallery();}
-
-function savePost(){
-  const title=document.getElementById('modalPostTitle').value.trim();
-  if(!title){alert('Por favor, adicione um título.');return;}
-  const mc=MONTHS_CONFIG[currentMonthIdx];
-  const pd={
-    month:mc.month,day:currentDay,type:modalType,title,
-    caption:document.getElementById('modalCaption').value,
-    imgObs:document.getElementById('modalImgObs').value,
-    roteiro:document.getElementById('modalRoteiro').value,
-    videoLink:document.getElementById('modalVideoLink').value.trim(),
-    slides:document.getElementById('modalSlides').value,
-    slidesNum:document.getElementById('modalSlidesNum').value,
-    pending:document.getElementById('modalPending').checked,
-    postado:document.getElementById('modalPostado').checked,
-    trafego:document.getElementById('modalTrafego').checked,
-    imgs:[...modalImgs]
-  };
-  if(currentPostIdx>=0){POSTS[currentPostIdx]=pd;}else{POSTS.push(pd);}
-  closeModal();renderAll();showToast('✅ Post salvo!');
-}
-function deletePost(){if(!confirm('Excluir este post?'))return;deletePostByKey(currentMonthIdx,currentDay);closeModal();}
-function deletePostByKey(mIdx,day){
-  const mc=MONTHS_CONFIG[mIdx];
-  const i=POSTS.findIndex(p=>p.month===mc.month&&p.day===day);
-  if(i>=0){POSTS.splice(i,1);renderAll();showToast('Post excluído.');}
-}
-function togglePostado(mIdx,day){
-  const mc=MONTHS_CONFIG[mIdx];
-  const i=POSTS.findIndex(p=>p.month===mc.month&&p.day===day);
-  if(i<0)return;
-  POSTS[i].postado=!POSTS[i].postado;
-  if(POSTS[i].postado)POSTS[i].pending=false;
-  renderAll();showToast(POSTS[i].postado?'✅ Marcado como postado!':'↩️ Desmarcado.');
-}
-
-// ── Card image upload ──
-let _cardMIdx=null,_cardDay2=null;
-const _cardIn=document.createElement('input');
-_cardIn.type='file';_cardIn.accept='image/*';_cardIn.multiple=true;_cardIn.style.display='none';
-document.body.appendChild(_cardIn);
-_cardIn.addEventListener('change',e=>{
-  const files=Array.from(e.target.files);
-  if(!files.length||_cardMIdx===null)return;
-  const mc=MONTHS_CONFIG[_cardMIdx];
-  const idx=POSTS.findIndex(p=>p.month===mc.month&&p.day===_cardDay2);
-  if(idx<0)return;
-  let n=0;
-  files.forEach(f=>{const r=new FileReader();r.onload=ev=>{POSTS[idx].imgs=POSTS[idx].imgs||[];POSTS[idx].imgs.push(ev.target.result);if(++n===files.length){renderAll();showToast(`${files.length} imagem(ns) adicionada(s)!`);}};r.readAsDataURL(f);});
-  _cardIn.value='';
-});
-function triggerCardImg(mIdx,day){_cardMIdx=mIdx;_cardDay2=day;_cardIn.click();}
-function removeCardThumb(mIdx,day,idx){
-  const mc=MONTHS_CONFIG[mIdx];
-  const i=POSTS.findIndex(p=>p.month===mc.month&&p.day===day);
-  if(i>=0){POSTS[i].imgs.splice(idx,1);renderAll();showToast('Imagem removida.');}
-}
-
-// ── Lightbox ──
-function onThumbClick(mIdx,day,idx){
-  if(_editMode){removeCardThumb(mIdx,day,idx);return;}
-  openLightbox(mIdx,day,idx);
-}
-function openLightbox(mIdx,day,idx){
-  const post=getPost(mIdx,day);
-  if(!post||!post.imgs||!post.imgs.length)return;
-  _lbMonthIdx=mIdx;_lbDay=day;_lbIdx=idx;
-  renderLightbox();
-  document.getElementById('lightbox').classList.add('open');
-  document.addEventListener('keydown',lbKeyHandler);
-}
-function renderLightbox(){
-  const post=getPost(_lbMonthIdx,_lbDay);if(!post)return;
-  const imgs=post.imgs||[];
-  document.getElementById('lbImg').src=imgs[_lbIdx]||'';
-  document.getElementById('lbTitle').textContent=post.title;
-  const mc=MONTHS_CONFIG[_lbMonthIdx];
-  document.getElementById('lbDate').textContent=`${_lbDay}/${mc.month}/${mc.year} · ${TYPE_LABELS[post.type]||post.type}`;
-  document.getElementById('lbCounter').textContent=imgs.length>1?`${_lbIdx+1} / ${imgs.length}`:'';
-  document.getElementById('lbPrev').disabled=_lbIdx===0;
-  document.getElementById('lbNext').disabled=_lbIdx===imgs.length-1;
-}
-function lbStep(dir){
-  const post=getPost(_lbMonthIdx,_lbDay);if(!post)return;
-  _lbIdx=Math.max(0,Math.min(_lbIdx+dir,(post.imgs||[]).length-1));renderLightbox();
-}
-function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.removeEventListener('keydown',lbKeyHandler);}
-function lbKeyHandler(e){if(e.key==='Escape')closeLightbox();if(e.key==='ArrowRight')lbStep(1);if(e.key==='ArrowLeft')lbStep(-1);}
-
-// ── Edit Mode ──
-function toggleEditMode(){
-  _editMode=!_editMode;
-  document.body.classList.toggle('view-mode',!_editMode);
-  document.querySelectorAll('.post-title').forEach(el=>{el.contentEditable=_editMode?'true':'false';});
-  const btn=document.getElementById('editModeBtn');
-  if(_editMode){btn.textContent='✏️ Modo Edição';btn.classList.remove('btn-cyan');btn.classList.add('btn-ghost');showToast('✏️ Modo edição ativado');}
-  else{btn.textContent='🔒 Edição Bloqueada';btn.classList.remove('btn-ghost');btn.classList.add('btn-cyan');showToast('🔒 Bloqueado · clique nas fotos para ampliar');}
-}
-
-// ── Datas Comemorativas ──
-function openDatasModal(){
-  const sel = document.getElementById('datasMonthSel');
-  sel.value = '1';
-  renderDatasList();
-  document.getElementById('datasOverlay').classList.add('open');
-}
-function closeDatasModal(){
-  document.getElementById('datasOverlay').classList.remove('open');
-}
-function renderDatasList(){
-  const mIdx = parseInt(document.getElementById('datasMonthSel').value) - 1;
-  const mc = MONTHS_CONFIG[mIdx];
-  const list = document.getElementById('datasList');
-  list.innerHTML = '';
-  Object.entries(mc.special || {}).forEach(([day, label]) => {
-    list.appendChild(makeDataRow(day, label));
-  });
-}
-function makeDataRow(day='', label=''){
-  const row = document.createElement('div');
-  row.className = 'data-row';
-  row.innerHTML = `
-    <input class="day-input" type="number" min="1" max="31" placeholder="Dia" value="${day}" style="border:1.5px solid var(--border);border-radius:8px;padding:7px 10px;font-family:'DM Sans',sans-serif;font-size:13px;text-align:center;outline:none;width:100%;">
-    <input class="label-input" type="text" placeholder="Ex: 🌸 Dia das Mães" value="${label}" style="border:1.5px solid var(--border);border-radius:8px;padding:7px 12px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;width:100%;">
-    <button class="rm-data-btn" onclick="this.closest('.data-row').remove()" style="width:34px;height:34px;border-radius:8px;border:none;background:#fee2e2;color:#be1f1f;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;">🗑</button>
-  `;
-  return row;
-}
-function addDataRow(){
-  document.getElementById('datasList').appendChild(makeDataRow());
-}
-function saveDatas(){
-  const mIdx = parseInt(document.getElementById('datasMonthSel').value) - 1;
-  const rows = document.querySelectorAll('#datasList .data-row');
-  const newSpecial = {};
-  rows.forEach(row => {
-    const day   = parseInt(row.querySelector('.day-input').value);
-    const label = row.querySelector('.label-input').value.trim();
-    if(day >= 1 && day <= 31 && label) newSpecial[day] = label;
-  });
-  MONTHS_CONFIG[mIdx].special = newSpecial;
-  closeDatasModal();
-  renderAll();
-  showToast('🗓 Datas comemorativas atualizadas!');
-}
-document.getElementById('datasMonthSel').addEventListener('change', renderDatasList);
-document.getElementById('datasOverlay').addEventListener('click', e=>{if(e.target===e.currentTarget)closeDatasModal();});
-
-// ── Export ──
-function buildPersistentHtml(){
-  const state = collectCalendarState();
-  let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-  const stateJson = JSON.stringify(state).replace(/<\/script/gi, '<\\/script');
-  const stateScript = '<script id="persistedCalendarState">window.__PERSISTED_CALENDAR_STATE__ = ' + stateJson + ';<\/script>';
+<script id="persistedCalendarState">window.__PERSISTED_CALENDAR_STATE__ = {"header":{"client":"Refricenter","year":"2026","sub":"CALENDÁRIO EDITORIAL · ABRIL 2026 · @ACERVODUDUFLA"},"posts":[{"month":4,"day":1,"type":"arte","title":"Tudo que envolve climatização, você encontra aqui","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Quando o assunto é climatização, ter variedade faz toda a diferença.\n\nNa Refricenter, você encontra uma linha completa de equipamentos, peças técnicas, conexões, sistemas de aquecimento e soluções para diferentes necessidades — seja residencial, comercial ou náutica.\n\nMais do que oferecer produtos, nosso compromisso é garantir eficiência, segurança e funcionamento correto em cada aplicação.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Posicionamento institucional + autoridade + variedade de portfólio. Mostrar que a Refricenter é referência completa em climatização na região.","imgObs":"Composição com mix de produtos (ar-condicionado, boiler, conexões, filtros, exaustor) conectados visualmente em layout limpo. Fundo escuro com destaque nos equipamentos. Logo Refricenter presente.\n\nTexto da arte:\nTudo que envolve climatização,\nvocê encontra aqui.\nSoluções completas\nem um só lugar.\nRefricenter","roteiro":""},{"month":4,"day":2,"type":"story","title":"Atendimento Refricenter","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"","descricao":"Facilitar contato + reforçar presença e acessibilidade. Story simples e funcional com horários e WhatsApp.","imgObs":"Identidade visual da marca (vermelho + preto), layout limpo com horários em destaque e botão de WhatsApp.\n\nTexto do story:\nSegunda a sexta\n08h às 18h\nSábado\n08h às 13h\n📲 Fale com a gente no WhatsApp\nSeu atendimento começa aqui.","roteiro":""},{"month":4,"day":3,"type":"reels","title":"Falta só isso aqui…","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Conforto não é luxo. É qualidade de vida.\n\nUm ambiente climatizado melhora o descanso, reduz o desgaste no dia a dia e proporciona mais bem-estar em todos os momentos.\n\nNa Refricenter, você encontra as melhores soluções em ar-condicionado, com orientação técnica e instalação correta para garantir desempenho e durabilidade.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Trend + identificação + transformação. Usar formato viral pra mostrar que o ar-condicionado é o que falta pra melhorar o dia a dia.\n\nInspiração: https://www.instagram.com/reel/DUjNU5HD0ui/","imgObs":"Gravação com pessoa gesticulando \"pouquinho\" com os dedos → corte para o ar-condicionado. Edição rápida, trend style.","roteiro":"Pessoa:\n\"Tá faltando isso aqui pra sua vida ficar muito melhor…\"\n(gesto com o dedo — pouquinho)\n(aponta pro ar-condicionado)"},{"month":4,"day":5,"type":"story","title":"Feliz Páscoa 🐰","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"","descricao":"Emocional + marca presente em data comemorativa. Sem venda direta, apenas presença institucional.","imgObs":"Arte temática de Páscoa com tons suaves, elementos sutis (coelho, ovos), identidade Refricenter integrada. Clima acolhedor.\n\nTexto do story:\n🐰 Feliz Páscoa!\nQue este momento seja de tranquilidade, conforto e conexão com quem você ama.\nQue sua casa esteja cheia de leveza, bem-estar e aquele clima agradável que transforma qualquer encontro em algo especial.\nRefricenter.","roteiro":""},{"month":4,"day":7,"type":"arte","title":"Se é pra gelar de verdade, escolha certo","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Para ter resultado de verdade, é preciso fazer certo desde o início.\n\nA escolha do equipamento, a instalação adequada e o suporte técnico fazem toda a diferença no desempenho e na durabilidade do sistema.\n\nNa Refricenter, você encontra tudo o que precisa para garantir um ambiente climatizado com segurança e eficiência.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Autoridade técnica + incentivo à decisão consciente. Reforçar que resultado depende de escolha certa.","imgObs":"Fundo impactante, frase em destaque grande. Equipamento parcialmente visível como apoio. Tom direto e confiante.\n\nTexto da arte:\nSe é pra gelar de verdade,\nescolha certo.\nRefricenter","roteiro":""},{"month":4,"day":9,"type":"reels","title":"Não pode instalar? Tem solução.","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Cada espaço exige uma solução adequada.\n\nNem sempre é possível instalar um sistema convencional, mas isso não significa abrir mão do conforto.\n\nNa Refricenter, trabalhamos com alternativas práticas e eficientes, como ar-condicionado portátil, garantindo climatização mesmo em ambientes com limitações.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Quebra de objeção — mostrar que existe alternativa para quem acha que não pode ter ar-condicionado. Foco no ar portátil.\n\nInspiração: https://www.instagram.com/reel/DOqmfcNjOUC/","imgObs":"Roteiro narrativo com cortes dinâmicos. Começa com dúvida, evolui para solução. Mostrar o ar-condicionado portátil funcionando em ambiente real.","roteiro":"Cena 1 – Pessoa olhando o ambiente (apartamento)\n\"Cara… aqui não dá pra instalar ar-condicionado, né?\"\n\"Sem espaço, não pode furar parede… complicado.\"\n\nCena 2 – Corte (entrada do técnico ou da solução)\n\"Na verdade… dá sim. Só não pode ser qualquer solução.\"\n\nCena 3 – Mostra o ar-condicionado portátil\n\"Tem opção prática, sem obra, sem quebradeira… e que resolve de verdade.\"\n\nCena 4 – Ar funcionando\n\"Você liga, ajusta a temperatura… e pronto. Ambiente confortável na hora.\"\n\nCena 5 – Pessoa já relaxando\n\"E o melhor… você não precisa abrir mão do conforto por causa do espaço.\"\n\nCena 6 – Fechamento\n\"Se você acha que não dá pra instalar, talvez só esteja faltando conhecer a solução certa.\"\n\"Fala com a Refricenter.\""},{"month":4,"day":13,"type":"arte","title":"Mais estrutura para quem quer crescer","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Estrutura adequada é essencial para manter seu negócio funcionando.\n\nEquipamentos de qualidade garantem desempenho contínuo, evitam falhas e contribuem para a eficiência da operação no dia a dia.\n\nNa Refricenter, você encontra soluções completas para ambientes comerciais, com orientação técnica e produtos confiáveis.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Foco no público B2B — equipamentos comerciais como investimento para negócios que dependem de refrigeração.","imgObs":"Composição com equipamentos reais usados em negócios (máquina de gelo, exaustor, ar-condicionado, filtro central, sistema de gás/conexões). Layout profissional, tom corporativo.\n\nTexto da arte:\nMais estrutura\npara quem quer crescer.\nRefricenter","roteiro":""},{"month":4,"day":15,"type":"reels","title":"40° lá fora… e aqui dentro?","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 O controle da temperatura faz toda a diferença no seu dia.\n\nAmbientes climatizados proporcionam mais conforto, melhor rendimento e qualidade de vida, seja em casa ou no trabalho.\n\nNa Refricenter, você encontra soluções em climatização pensadas para entregar desempenho, economia e durabilidade.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Sensação — contraste entre calor externo e conforto interno. Formato visual e rápido.\n\nInspiração: https://br.pinterest.com/pin/13229392653360091/","imgObs":"Pessoa chegando com calor, suando → entrada no ambiente climatizado → alívio imediato. Edição com transição de temperatura (filtro quente → filtro frio).","roteiro":"Pessoa com calor entrando no ambiente, suando.\nCorte: temperatura caindo (texto ou efeito visual).\nLiga o ar-condicionado.\nSe refresca — alívio no rosto."},{"month":4,"day":17,"type":"carrossel","title":"Se refrescou na ilha… e em casa?","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"3 slides","slides":"Slide 1:\nSe refrescou nas ilhas de Angra… 🌊\n\nSlide 2:\nE quando chegou em casa…\nteve o mesmo conforto?\n\nSlide 3:\nO calor não precisa te acompanhar.\nCom a Refricenter,\no conforto continua dentro de casa.","caption":"🔧 Aproveitar o ambiente também é ter conforto dentro de casa.\n\nDepois de um dia de calor, nada melhor do que retornar para um espaço preparado para oferecer bem-estar e temperatura ideal.\n\nNa Refricenter, você encontra soluções completas em climatização para transformar sua rotina com mais qualidade e eficiência.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Conexão local — usar a identidade de Angra (ilhas, praia, calor) para criar identificação e trazer pro ambiente doméstico.","imgObs":"Estética praiana no início, transição para ambiente de casa. Cores que remetam a Angra (azul, verde-água) + identidade Refricenter.","roteiro":""},{"month":4,"day":21,"type":"arte","title":"O conforto que sua mãe merece, todos os dias","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Conforto também é uma forma de cuidado.\n\nProporcionar um ambiente agradável e bem climatizado é investir no bem-estar de quem você ama todos os dias.\n\nNeste Dia das Mães, conte com a Refricenter para encontrar a solução ideal em climatização, com qualidade, segurança e eficiência.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Abertura da campanha de Dia das Mães — emocional + institucional. Conectar conforto térmico com cuidado materno.","imgObs":"Arte temática Dia das Mães com tons suaves (rosa, azul claro, branco). Clima de cuidado e acolhimento. Coração azul Refricenter como elemento.\n\nTexto da arte:\nO conforto que sua mãe merece,\ntodos os dias.\nDia das Mães Refricenter 💙","roteiro":""},{"month":4,"day":23,"type":"reels","title":"Se conforto é prioridade… isso faz sentido","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Mais do que um presente, é qualidade de vida.\n\nAmbientes confortáveis fazem diferença na rotina, no descanso e no bem-estar de quem mais importa.\n\nNa Refricenter, você encontra soluções que vão além do produto — entregam conforto todos os dias.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Reels narrativo emocional — fala direta com o público sobre presentear com qualidade de vida. Continuação da campanha Dia das Mães.","imgObs":"Talking head ou narração com imagens de apoio (mãe em casa, ambiente confortável, ar-condicionado). Tom intimista e emocional.","roteiro":"1. \"Você já parou pra pensar que o melhor presente… é aquele que a pessoa sente todos os dias?\"\n2. \"Tenho certeza que a sua mãe sempre cuidou de todo mundo… agora é a sua vez de cuidar dela.\"\n3. \"Não é só um ar-condicionado… é qualidade de vida dentro de casa.\"\n4. \"Um ambiente confortável muda o descanso, o humor… muda tudo.\"\n5. \"Conforto não é luxo… é cuidado com quem você ama.\"\n6. \"Se é pra presentear, que seja com algo que realmente faça sentido. Fala com a Refricenter.\""},{"month":4,"day":27,"type":"arte","title":"Conforto também é independência","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"","slides":"","caption":"🔧 Ter conforto é ter mais autonomia no dia a dia.\n\nUm ambiente preparado proporciona mais praticidade, independência e qualidade de vida dentro de casa.\n\nNa Refricenter, você encontra soluções que tornam a rotina mais leve e funcional.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Continuação da campanha Dia das Mães com ângulo de empoderamento e autonomia.","imgObs":"Arte temática Dia das Mães, mantendo a identidade visual da campanha (tons suaves + azul Refricenter). Frase forte em destaque.\n\nTexto da arte:\nConforto também\né independência.\nDia das Mães Refricenter 💙","roteiro":""},{"month":4,"day":29,"type":"carrossel","title":"O presente ideal existe e está aqui","pending":false,"trafego":false,"postado":false,"imgs":[],"videoLink":"","slidesNum":"7 slides","slides":"🟣 Slide 1 (Capa):\nO presente ideal existe.\nE você encontra aqui.\nDia das Mães Refricenter 💙\n\n❄️ Slide 2 – Ar-condicionado:\nConforto todos os dias\nUm ambiente climatizado transforma o descanso, melhora o bem-estar e faz diferença na rotina dela o ano inteiro.\n\n🔥 Slide 3 – Boiler / Aquecedor:\nÁgua quente sempre pronta\nMais praticidade no dia a dia, conforto no banho e eficiência para tornar cada momento mais agradável.\n\n💧 Slide 4 – Filtro Central / Purificador:\nCuidado que vem da água\nMais qualidade, mais segurança e mais saúde para toda a casa — um cuidado essencial no dia a dia.\n\n🌬️ Slide 5 – Exaustor / Ventilação:\nAmbiente leve e saudável\nMelhor circulação de ar, mais conforto térmico e um espaço mais agradável para viver todos os dias.\n\n⚙️ Slide 6 – Lava e Seca:\nMais praticidade na rotina\nTecnologia e eficiência para facilitar o dia a dia e garantir mais tempo para o que realmente importa.\n\n🟢 Slide 7 – CTA Final:\nEscolha com quem entende\nNeste Dia das Mães, presenteie com conforto, praticidade e qualidade de vida.\nFale com a Refricenter e encontre a solução ideal.","caption":"🔧 Escolher o presente ideal é pensar no dia a dia de quem você ama.\n\nNa Refricenter, você encontra soluções que vão além do produto — entregam conforto, praticidade e qualidade de vida em todos os momentos.\n\nAr-condicionado, aquecedores, filtros, ventilação e equipamentos que fazem diferença real na rotina.\n\nNeste Dia das Mães, presenteie com algo que ela vai sentir todos os dias.\n\n📲 Fale com nossa equipe: (24) 99866-9987\n📍 Av. José Elias Rabha, 105 – Balneário\n☎️ (24) 3365-3117 | (24) 3365-2983","descricao":"Carrossel de campanha com foco em conversão. Cada slide conecta um produto com benefício emocional. Encerramento da campanha Dia das Mães.","imgObs":"Arte temática de Dia das Mães (cores suaves, conforto, casa). Cada slide com um produto diferente + ambientação (mãe em casa, conforto, rotina leve).","roteiro":""},{"month":1,"day":4,"type":"arte","title":"teste","caption":"","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","pending":false,"postado":false,"trafego":false,"imgs":[]}],"planData":{"1":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"2":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"3":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"4":{"objetivos":"Aumentar alcance dentro da cidade de Angra com vendas e manutenção.","investimento":"300 reais.","trafego":"300 reais em meta ads.","influenciadores":"Nenhum.","persona":"Pessoas de 25+, comercio e condomínios.","observacoes":"Alinhar nova captação de material e apresentação de site."},"5":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"6":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"7":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"8":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"9":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"10":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"11":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"12":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""}},"monthsConfig":[{"year":2026,"month":1,"firstDow":4,"days":31,"notes":"","special":{"1":"🎆 Ano Novo","6":"🏖️ Feriado RJ"}},{"year":2026,"month":2,"firstDow":0,"days":28,"notes":"","special":{"16":"🎭 Carnaval","17":"🎭 Carnaval","18":"🎭 Quarta-feira de Cinzas"}},{"year":2026,"month":3,"firstDow":0,"days":31,"notes":"","special":{"8":"👩 Dia da Mulher","20":"🌿 Início do Outono"}},{"year":2026,"month":4,"firstDow":3,"days":30,"notes":"Refricenter — 13 publicações (5 artes + 4 reels + 2 carrosséis + 2 stories) · @refricenterangra · 1.653 seguidores","special":{"1":"🤥 Dia da Mentira","2":"🧩 Consciência do Autismo","3":"✝️ Sexta-Feira Santa","5":"🐣 Páscoa","6":"🙏 São Benedito","7":"🌍 Dia Mundial da Saúde","8":"🎗️ Combate ao Câncer","13":"💋 Dia do Beijo","14":"☕ Dia Mundial do Café","21":"🇧🇷 Tiradentes","22":"🌍 Dia da Terra","23":"⚔️ São Jorge","24":"🥩 Dia Int. do Churrasco","28":"👵 Dia da Sogra","30":"🎷 Dia Int. do Jazz"}},{"year":2026,"month":5,"firstDow":5,"days":31,"notes":"","special":{"10":"💐 Dia das Mães","31":"🟡 Fim Maio Amarelo"}},{"year":2026,"month":6,"firstDow":1,"days":30,"notes":"","special":{"5":"🌍 Meio Ambiente","12":"💑 Dia dos Namorados"}},{"year":2026,"month":7,"firstDow":3,"days":31,"notes":"","special":{}},{"year":2026,"month":8,"firstDow":6,"days":31,"notes":"","special":{"9":"👨 Dia dos Pais"}},{"year":2026,"month":9,"firstDow":2,"days":30,"notes":"","special":{"7":"🇧🇷 Independência","15":"🛍️ Dia do Cliente","22":"🌸 Primavera"}},{"year":2026,"month":10,"firstDow":4,"days":31,"notes":"","special":{"2":"👶 Dia das Crianças","12":"🇧🇷 N.Sra. Aparecida","31":"🎃 Halloween"}},{"year":2026,"month":11,"firstDow":0,"days":30,"notes":"","special":{"2":"✝️ Finados","15":"🇧🇷 Proclamação Rep.","20":"⚫ Black Friday"}},{"year":2026,"month":12,"firstDow":2,"days":31,"notes":"","special":{"8":"🎄 Imaculada Conceição","25":"🎄 Natal","31":"🥂 Réveillon"}}],"monthNotes":{"1":"","2":"","3":"","4":"Refricenter — 13 publicações (5 artes + 4 reels + 2 carrosséis + 2 stories) · @refricenterangra · 1.653 seguidores","5":"","6":"","7":"","8":"","9":"","10":"","11":"","12":""}};</script>';
 
   if(/<script id="persistedCalendarState">[\s\S]*?<\\\/script>/.test(html)){
     html = html.replace(/<script id="persistedCalendarState">[\s\S]*?<\\\/script>/, stateScript);
@@ -1637,7 +1055,8 @@ const observer = new IntersectionObserver((entries)=>{
   });
 },{threshold:0.15});
 document.querySelectorAll('.month-block').forEach(el=>observer.observe(el));
-</script><input type="file" accept="image/*" multiple="" style="display: none;">
+</script>
+
 
 
 </body></html>
